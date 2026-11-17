@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mussu's Birthday Universe ✨</title>
+<style>
+:root{color-scheme:dark;--pink:#ff9bcf;--gold:#ffdc9a;--muted:#d6cdec}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:white;font-family:system-ui,sans-serif;background:radial-gradient(circle at 20% 15%,#503474,transparent 38%),radial-gradient(circle at 80% 75%,#253a75,transparent 38%),#0b0923}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.6;background-image:radial-gradient(2px 2px at 20% 30%,white 45%,transparent 60%),radial-gradient(1px 1px at 70% 20%,white 45%,transparent 60%),radial-gradient(2px 2px at 80% 65%,white 45%,transparent 60%);background-size:240px 210px}main{position:relative;width:min(760px,92vw);margin:auto;padding:38px 0 55px}.brand{text-align:center;letter-spacing:.2em;color:var(--gold);font-size:.75rem;margin-bottom:25px}.card{border:1px solid #ffffff30;background:#20183edb;border-radius:27px;padding:clamp(22px,5vw,43px);box-shadow:0 24px 80px #0007}h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.14;margin:0 0 18px}h1{font-size:clamp(2.4rem,7vw,4.2rem)}h2{font-size:clamp(1.9rem,6vw,2.8rem)}p{color:var(--muted);line-height:1.7}.pink{color:var(--pink)}.gold{color:var(--gold)}.eyebrow{color:var(--gold);font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;margin:0 0 13px}.hidden{display:none!important}button{border:0;border-radius:99px;padding:14px 20px;background:linear-gradient(105deg,var(--gold),var(--pink));color:#27153c;font-weight:700;font-size:1rem;cursor:pointer}button:disabled{opacity:.5;cursor:wait}.secondary,.choice{background:#ffffff12;color:white;border:1px solid #ffffff40}.choice{text-align:left;border-radius:15px;width:100%}.choice.selected{border-color:var(--pink);background:#ff9bcf33}.choices{display:grid;gap:12px;margin-top:23px}.row{display:flex;gap:12px;flex-wrap:wrap}.row button{flex:1}.pill{display:inline-block;border:1px solid #ffffff35;border-radius:50px;padding:7px 12px;font-size:.85rem;margin:0 6px 8px 0}.progress{height:5px;background:#ffffff20;border-radius:5px;margin:18px 0 28px;overflow:hidden}.progress>div{height:100%;background:linear-gradient(90deg,var(--pink),var(--gold));transition:width .3s}input{width:100%;border:1px solid #ffffff44;border-radius:13px;background:#08071e99;color:white;padding:14px;margin:9px 0;font:inherit}.small{font-size:.9rem}.status{margin-top:20px;font-size:.9rem;color:var(--gold)}.note{border-left:2px solid var(--pink);padding:7px 20px;margin:25px 0}.gift{text-align:center;font-size:4rem}.footer{text-align:center;font-size:.85rem;margin-top:22px}#message{overflow-wrap:anywhere}
+
+/* Magical universe visual upgrade — all multiplayer logic remains unchanged */
+:root{--pink:#ff9fd7;--gold:#ffe1a0;--muted:#e0d7f5}
+html{scroll-behavior:smooth}
+body{overflow-x:hidden;background:radial-gradient(ellipse at 50% -20%,#704a9a88,transparent 52%),radial-gradient(ellipse at 0% 70%,#2d4e8d88,transparent 42%),radial-gradient(ellipse at 100% 65%,#8c327a66,transparent 48%),#08071c;background-attachment:fixed}
+body:before{animation:starDrift 100s linear infinite;opacity:.8}
+body:after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,transparent 30%,#05041488 100%)}
+main{z-index:2;width:min(820px,93vw);padding-top:48px}
+.brand{text-shadow:0 0 22px #ffdca088;animation:floatIn 1.3s ease both}
+.card{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(145deg,#2b2052e8,#161332e8 70%,#27183de8);border:1px solid #ffd7f454;box-shadow:0 0 0 1px #ffffff0c,0 30px 100px #0009,0 0 80px #9d56ed20;backdrop-filter:blur(18px);animation:floatIn .9s ease both}
+.card:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 85% 0%,#f6a1f51b,transparent 35%),radial-gradient(circle at 10% 95%,#88aaff12,transparent 45%)}
+h1,h2{text-shadow:0 2px 35px #f1a4f333}
+.pink{background:linear-gradient(110deg,#ff9ad3,#ffe3ae,#ff9ad3);background-size:200% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;animation:shimmer 7s linear infinite}
+button{transition:transform .22s ease,box-shadow .22s ease,filter .22s ease;box-shadow:0 7px 28px #ff9acb30}
+button:hover:not(:disabled){transform:translateY(-3px);filter:brightness(1.09);box-shadow:0 12px 35px #ff9acb55}
+button:active:not(:disabled){transform:translateY(0) scale(.98)}
+button:focus-visible,input:focus-visible{outline:3px solid #ffe4aa;outline-offset:3px}
+.choice{box-shadow:none;transition:background .2s,border-color .2s,transform .2s}
+.choice:hover:not(:disabled){background:#f8b2f31b;border-color:#ffd8f0}
+.pill{background:#ffffff0b;box-shadow:inset 0 0 12px #ffffff09}
+.progress{height:7px;box-shadow:0 0 16px #ff9acb22}.progress>div{box-shadow:0 0 15px #ff9acb88}
+#stageContent{animation:chapterAppear .65s cubic-bezier(.2,.8,.2,1) both}
+#stageContent h2{color:#fff7ff}
+.gift{animation:giftFloat 3.5s ease-in-out infinite;filter:drop-shadow(0 0 20px #ffb2d9)}
+.note{background:#ffffff09;border-radius:0 16px 16px 0}
+.cosmos{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.star{position:absolute;width:var(--size);height:var(--size);border-radius:50%;background:#fff;box-shadow:0 0 10px #ffe4ff;opacity:var(--opacity);animation:twinkle var(--duration) ease-in-out infinite alternate;animation-delay:var(--delay)}
+.planet{position:absolute;border-radius:50%;filter:drop-shadow(0 0 24px #c4a1ff55);animation:orbitFloat 12s ease-in-out infinite}
+.planet.one{width:clamp(90px,16vw,210px);height:clamp(90px,16vw,210px);left:-5vw;top:15vh;background:radial-gradient(circle at 27% 27%,#ffdfc6,#b47ab9 42%,#5d418d 72%,#1b1643);box-shadow:inset -20px -16px 35px #09082188,0 0 75px #df96e044}
+.planet.two{width:clamp(60px,10vw,130px);height:clamp(60px,10vw,130px);right:-2vw;bottom:12vh;background:radial-gradient(circle at 30% 25%,#d4f4ff,#6d91d5 45%,#303b85 80%);box-shadow:inset -15px -12px 24px #09082188,0 0 65px #88b9ff55;animation-delay:-5s}
+.nebula{position:absolute;width:45vw;height:45vw;border-radius:50%;filter:blur(75px);opacity:.23;animation:orbitFloat 18s ease-in-out infinite}
+.nebula.a{left:-18vw;bottom:-12vw;background:#bd5dff}.nebula.b{right:-15vw;top:-15vw;background:#5379ff;animation-delay:-8s}
+.shooting-star{position:absolute;width:140px;height:2px;background:linear-gradient(90deg,transparent,#fff4dd);border-radius:5px;opacity:0;transform:rotate(-28deg);animation:shoot 12s linear infinite}
+.shooting-star.a{top:17%;left:65%}.shooting-star.b{top:43%;left:18%;animation-delay:6s}
+.sparkle{position:fixed;z-index:8;pointer-events:none;font-size:18px;animation:sparkleOut .8s ease-out forwards}
+@keyframes twinkle{from{opacity:.1;transform:scale(.65)}to{opacity:var(--opacity);transform:scale(1.4)}}
+@keyframes starDrift{to{background-position:240px 210px}}
+@keyframes floatIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes chapterAppear{from{opacity:0;transform:translateY(15px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes shimmer{to{background-position:-200% 0}}
+@keyframes giftFloat{50%{transform:translateY(-13px) rotate(6deg)}}
+@keyframes orbitFloat{50%{transform:translateY(-25px) translateX(10px)}}
+@keyframes shoot{0%,76%{opacity:0;transform:translate(0,0) rotate(-28deg)}79%{opacity:1}86%{opacity:0;transform:translate(-220px,120px) rotate(-28deg)}100%{opacity:0}}
+@keyframes sparkleOut{to{opacity:0;transform:translateY(-48px) scale(.35) rotate(40deg)}}
+@media(max-width:600px){main{padding-top:25px}.planet.one{left:-60px;top:4vh;opacity:.65}.planet.two{right:-45px;bottom:4vh;opacity:.7}.card{border-radius:23px}.brand{font-size:.63rem;letter-spacing:.13em}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+
+.story-scene{position:relative;min-height:185px;margin:8px 0 25px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;overflow:hidden;border-radius:22px;background:radial-gradient(ellipse at 50% 45%,#ab5bf12b,transparent 60%),linear-gradient(135deg,#ffffff0a,#ffffff02);border:1px solid #ffffff17}
+.story-scene:before,.story-scene:after{content:'✦  ·   ✧   ·  ✦';position:absolute;top:22px;color:#ffe3af88;letter-spacing:32px;font-size:13px}.story-scene:after{top:auto;bottom:20px;transform:rotate(12deg)}
+.story-orb{width:104px;height:104px;border-radius:50%;display:grid;place-items:center;font-size:53px;background:radial-gradient(circle at 30% 25%,#ffe8f9bb,#d284d188 44%,#5d4aa588 75%,#171437);box-shadow:inset -12px -14px 26px #100b4388,0 0 48px #f7a5ee55;animation:giftFloat 4s ease-in-out infinite;z-index:1}
+.story-scene-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.19em;color:#ffe5bd;z-index:1}
+@media(prefers-reduced-motion:reduce){.story-orb{animation:none}}
+.birthday-cake{font-size:clamp(5rem,18vw,9rem);text-align:center;filter:drop-shadow(0 0 25px #ffb4d899);animation:giftFloat 3.2s ease-in-out infinite}.wish-wrap{text-align:center;padding:10px 0 22px}.wish-wrap button{font-size:1.1rem;padding:17px 30px}.birthday-letter{margin-top:18px;padding:22px clamp(18px,5vw,36px);background:linear-gradient(135deg,#ffe0a010,#ff9bce15);border:1px solid #ffe2b65a;border-radius:23px;animation:chapterAppear .8s ease both}.birthday-letter p{font-size:1.04rem;line-height:1.85;margin:0 0 20px}.birthday-letter p:last-child{margin-bottom:0}.birthday-emphasis{color:#ffe1a0;font-weight:700;text-align:center;font-size:1.16rem!important}.birthday-confetti{position:fixed;z-index:20;pointer-events:none;font-size:clamp(18px,3vw,28px);animation:confettiFall 4s linear forwards}@keyframes confettiFall{from{transform:translate3d(0,-10vh,0) rotate(0deg);opacity:1}to{transform:translate3d(var(--drift),120vh,0) rotate(700deg);opacity:0}}@media(prefers-reduced-motion:reduce){.birthday-cake,.birthday-confetti{animation:none!important}}
+</style></head><body><div class="cosmos" aria-hidden="true"><div class="nebula a"></div><div class="nebula b"></div><div class="planet one"></div><div class="planet two"></div><div class="shooting-star a"></div><div class="shooting-star b"></div><div id="starfield"></div></div><main><div class="brand">✦ A LITTLE UNIVERSE MADE FOR MUSSU ✦</div><section class="card"><div class="eyebrow">Our love story · Mussu & Ajay</div><h1>Our universe, <span class="pink">Mussu. ♡</span></h1><p>A little universe from Ajay to Mussu. Travel through your magical birthday adventure at your own pace, one glowing planet at a time. Your birthday surprise waits among the stars.</p>
+<div id="lobby"><p>Your birthday adventure is ready whenever you are.</p><button id="soloBtn">Start my birthday adventure ✨</button><p><a id="multiplayerLink" href="?mode=multiplayer" style="color:#ffe3ad">Or play together with Ajay</a></p><div id="multiControls" class="hidden"><p>Ajay can create a shared room and send Mussu a private invitation.</p><button id="createBtn">Create our universe ✨</button></div><div id="joinArea" class="hidden"><p>Joining with your invitation…</p><button id="joinBtn" class="secondary">Try joining again</button></div></div>
+<div id="inviteArea" class="hidden"><p class="gold">Your universe is ready! Send this private invitation to Mussu:</p><input id="inviteLink" readonly aria-label="Private invitation link"><div class="row"><button id="copyBtn">Copy invitation</button><button id="enterBtn" class="secondary">Enter the game</button></div></div>
+<div id="gameArea" class="hidden"><div><span class="pill" id="rolePill">Connected</span><span class="pill" id="playersPill">Players: 1/2</span></div><div id="soloRestart" class="hidden" style="margin:12px 0"><button id="restartBtn" class="secondary" style="font-size:.82rem">Start again ↻</button></div><div class="progress"><div id="progressBar" style="width:0%"></div></div><div id="stageContent"></div><div class="status" id="liveStatus">Connecting…</div></div><p id="message" role="status"></p></section><p class="footer">Made with stardust, mischief, and lots of love ♡</p></main>
+<script type="module">
+import {initializeApp} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
+import {getAuth,signInAnonymously} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
+import {getDatabase,ref,set,get,update,onValue,runTransaction,push} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-database.js';
+const firebaseConfig={apiKey:'AIzaSyBqp7CfF9DaIWwGfR0-Qj7ndBtbNZSPEDo',authDomain:'mussu-birthday.firebaseapp.com',projectId:'mussu-birthday',storageBucket:'mussu-birthday.firebasestorage.app',messagingSenderId:'920124519825',appId:'1:920124519825:web:8988ed4d398d772f35d630',measurementId:'G-VZLNNECQYH',databaseURL:'https://mussu-birthday-default-rtdb.asia-southeast1.firebasedatabase.app/'};
+const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getDatabase(app),$=id=>document.getElementById(id);
+let user,roomId,token,hostUid,state={},members={},stateRef,unsubscribers=[],advancing=false,solo=false;
+const soloKey="mussu-birthday-solo-progress-v1";
+const show=id=>$(id).classList.remove('hidden'),hide=id=>$(id).classList.add('hidden');
+function message(s,error=false){$('message').textContent=s;$('message').style.color=error?'#ffb4b4':'#ffdc9a'}
+function randomToken(){let b=new Uint8Array(24);crypto.getRandomValues(b);return Array.from(b,x=>x.toString(16).padStart(2,'0')).join('')}
+async function signIn(){if(!auth.currentUser)await signInAnonymously(auth);user=auth.currentUser}
+function invitation(){const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('room',roomId);u.searchParams.set('invite',token);return u.href}
+function ids(){return Object.keys(members)}
+function ready(){return ids().length===2&&ids().every(id=>state.ready?.[id]===true)}
+async function createRoom(){ $('createBtn').disabled=true;message('Building your universe…');try{await signIn();roomId=push(ref(db,'rooms')).key;token=randomToken();hostUid=user.uid;const initial={stage:0,ready:{},answers:{},riddleSolved:{},wishes:{},createdAt:Date.now()};await set(ref(db,`rooms/${roomId}`),{hostUid,inviteToken:token,members:{[user.uid]:true},state:initial});stateRef=ref(db,`rooms/${roomId}/state`);$('inviteLink').value=invitation();hide('lobby');show('inviteArea');message('Invitation ready. Keep the link private.');subscribe()}catch(e){console.error(e);message('Unable to create the room: '+e.message,true);$('createBtn').disabled=false}}
+async function joinRoom(){const params=new URLSearchParams(location.search);roomId=params.get('room');token=params.get('invite');if(!roomId||!token){message('The invitation is missing room details.',true);return} $('joinBtn').disabled=true;message('Opening your invitation…');try{await signIn();await set(ref(db,`joinRequests/${roomId}/${user.uid}`),{token});const membership=ref(db,`rooms/${roomId}/members/${user.uid}`);try{await set(membership,true)}catch(e){const s=await get(membership);if(s.val()!==true)throw e}const room=await get(ref(db,`rooms/${roomId}`));if(!room.exists()||room.val().inviteToken!==token)throw Error('Invalid invitation.');hostUid=room.val().hostUid;stateRef=ref(db,`rooms/${roomId}/state`);hide('lobby');show('gameArea');message('You made it! ✨');subscribe()}catch(e){console.error(e);message('Could not join: '+e.message,true);$('joinBtn').disabled=false}}
+function subscribe(){unsubscribers.forEach(fn=>fn());unsubscribers=[];unsubscribers.push(onValue(ref(db,`rooms/${roomId}/members`),s=>{members=s.val()||{};render();advance()},e=>message('Connection error: '+e.message,true)));unsubscribers.push(onValue(stateRef,s=>{state=s.val()||{};render();advance()},e=>message('Sync error: '+e.message,true)));$('rolePill').textContent=user.uid===hostUid?'Host · Ajay':'Guest · Mussu';show('gameArea')}
+async function advance(){if(advancing||!ready()||Number(state.stage)>=5)return;advancing=true;try{await runTransaction(stateRef,current=>{if(!current||Number(current.stage)>=5||!ids().every(id=>current.ready?.[id]===true))return;return {...current,stage:Number(current.stage||0)+1,ready:{}}})}catch(e){console.error(e);message('Could not advance: '+e.message,true)}finally{advancing=false}}
+async function choose(path,value){if(solo){if(path){state[path]??={};state[path][user.uid]=value}state.stage=Math.min(5,Number(state.stage||0)+1);try{localStorage.setItem(soloKey,JSON.stringify(state))}catch(e){console.warn("Progress could not be saved",e)}render();return}try{await update(stateRef,{[`ready/${user.uid}`]:true,...(path?{[`${path}/${user.uid}`]:value}:{})});message('Saved! Waiting for your co-explorer…')}catch(e){console.error(e);message('Could not save: '+e.message,true)}}
+function button(label,handler,cls=''){const el=document.createElement('button');el.textContent=label;el.className=cls;el.addEventListener('click',handler);return el}
+function addPlanetArt(root,stage){const scenes=[['✦','A universe made for two'],['🪐','The Planet of Us'],['✨','Our Memory Constellation'],['🌙','The Wishing Galaxy'],['💗','The Heart’s Secret'],['🎂','The Birthday Star']];const scene=scenes[Math.min(stage,5)];const art=document.createElement('div');art.className='story-scene';art.setAttribute('aria-label',scene[1]);const orb=document.createElement('div');orb.className='story-orb';orb.textContent=scene[0];const label=document.createElement('div');label.className='story-scene-label';label.textContent=scene[1];art.append(orb,label);root.insertBefore(art,root.firstChild)}
+function launchBirthdayConfetti(){if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;const symbols=['✨','🎉','💖','🎊','⭐','🎈'];for(let i=0;i<65;i++){const piece=document.createElement('span');piece.className='birthday-confetti';piece.textContent=symbols[i%symbols.length];piece.style.left=(Math.random()*100)+'vw';piece.style.top=(-10-Math.random()*35)+'vh';piece.style.setProperty('--drift',((Math.random()-.5)*190)+'px');piece.style.animationDelay=(Math.random()*1.3)+'s';piece.style.animationDuration=(3+Math.random()*2)+'s';document.body.appendChild(piece);piece.addEventListener('animationend',()=>piece.remove(),{once:true})}}
+function render(){if((!stateRef&&!solo)||!user)return;const people=ids(),stage=Number(state.stage||0);$('playersPill').textContent=solo?'Your adventure ✨':`Players: ${Math.min(people.length,2)}/2`;$('progressBar').style.width=`${Math.min(stage*20,100)}%`;const root=$('stageContent');root.replaceChildren();const eyebrow=document.createElement('div');eyebrow.className='eyebrow';const title=document.createElement('h2'),p=document.createElement('p'),controls=document.createElement('div');controls.className='choices';if(!solo&&people.length<2){title.textContent='Waiting for our second star…';p.textContent='Mussu can join by opening the private invitation link. The adventure starts when both of you are here.';$('liveStatus').textContent='One of two players connected';root.append(title,p);return}if(!solo&&people.length>2){title.textContent='Too many explorers';p.textContent='This room is designed for two people. Please create a fresh private room.';root.append(title,p);return}$('liveStatus').textContent=solo?'Your progress saves on this device ✨':'Both players connected · Live synchronization active';const mine=state.ready?.[user.uid];function options(items,path){const selected=state[path]?.[user.uid];for(const [label,value]of items){const b=button(label,()=>choose(path,value),'choice'+(selected===value?' selected':''));if(mine)b.disabled=true;controls.append(b)}}
+if(stage===0){eyebrow.textContent='The quest begins';title.textContent='Mussu, ready to explore our universe?';p.textContent=solo?'A magical birthday adventure from Ajay, just for you. Explore five little planets and discover your birthday surprise at the end.':'Ajay is right here with you. Five little stops, one love story, and a birthday surprise waiting at the end.';if(!mine)controls.append(button("I'm ready ✨",()=>choose()));}
+else if(stage===1){eyebrow.textContent='Planet one · The Planet of Us';title.textContent='What makes our little universe feel like home?';p.textContent='Every love story has its own gravity. Choose what brings us closest.';options([['Laughing together over the smallest things ✨','laughter'],['Being there for each other, always ♡','support'],['Dreaming about our next adventure 🌙','adventure']],'answers')}
+else if(stage===2){eyebrow.textContent='Planet two · The Memory Constellation';title.textContent='I have a face and two hands, but no arms or legs. What am I?';p.textContent='Every shared moment becomes a star in our constellation. Solve this little time riddle to keep exploring.';if(!mine){const input=document.createElement('input');input.placeholder='Your answer…';input.setAttribute('aria-label','Riddle answer');controls.append(input,button('Unlock the clue 🔐',()=>{if(/^(a )?(clock|watch)$/i.test(input.value.trim()))choose('riddleSolved',true);else message('Try again — think about time!',true)}))}}
+else if(stage===3){eyebrow.textContent='Planet three · The Wishing Galaxy';title.textContent='What shall we wish for, together?';p.textContent='Different wishes can still shine in the same sky. Pick one for our next chapter.';options([['A thousand tiny adventures together 🌙','adventure'],['More silly moments and laughter ♡','laughter'],['Watching each other’s dreams come true ✨','dreams']],'wishes')}
+else if(stage===4){eyebrow.textContent='Planet four · The Heart’s Secret';title.textContent='One last portal, Mussu…';p.textContent=solo?'Ajay has one more little surprise. Open the portal and travel to your Birthday Star.':'Ajay has one more little surprise. Open the portal together and travel to your Birthday Star.';if(!mine)controls.append(button('Open the secret room ✨',()=>choose()))}
+else{eyebrow.textContent='Planet five · The Birthday Star · For Mussu';title.textContent='Happy Birthday, Mussu! 🎂💖';p.textContent='Today is all about YOU. The universe has one last surprise waiting for you.';const cake=document.createElement('div');cake.className='birthday-cake';cake.textContent='🎂';cake.setAttribute('role','img');cake.setAttribute('aria-label','Birthday cake with candles');const reveal=button('Make a Wish ✨',()=>{reveal.remove();letter.classList.remove('hidden');launchBirthdayConfetti();letter.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'})});const letter=document.createElement('div');letter.className='birthday-letter hidden';const paragraphs=[['Today is all about you.',false],['If I could make one wish for you, it would be that life keeps giving you reasons to smile — and that I get to be beside you for as many of them as possible.',false],['I hope this new chapter of your life brings you beautiful surprises, dreams that come true, unexpected adventures, and countless little moments that make your heart happy.',false],['May you always find reasons to laugh, courage to chase everything you dream of, and people who remind you how special you are.',false],['You deserve happiness on ordinary days, magic in unexpected places, and a future even more beautiful than you imagine.',false],['So make a wish, birthday girl. ✨',true],['Because today, the whole universe is celebrating YOU. 🌌',false],['Happy Birthday, my Mussu! 🎂❤️',true],['With all my love,',false],['Ajay 💕',true]];for(const [line,emphasis] of paragraphs){const para=document.createElement('p');para.textContent=line;if(emphasis)para.className='birthday-emphasis';letter.appendChild(para)}const wishWrap=document.createElement('div');wishWrap.className='wish-wrap';wishWrap.append(cake,reveal);root.append(eyebrow,title,p,wishWrap,letter);addPlanetArt(root,stage);return}
+root.append(eyebrow,title,p,controls);addPlanetArt(root,stage);if(mine&&!solo)$('liveStatus').textContent='You are ready. Waiting for the other player…'}
+function startSolo(){solo=true;user={uid:'mussu-solo'};members={'mussu-solo':true};try{state=JSON.parse(localStorage.getItem(soloKey)||'null')||{stage:0}}catch{state={stage:0}}state.stage=Math.max(0,Math.min(5,Number(state.stage)||0));hide('lobby');hide('inviteArea');show('gameArea');show('soloRestart');$('rolePill').textContent='For Mussu ♡';message('Enjoy your birthday adventure!');render()}
+$('soloBtn').addEventListener('click',startSolo);
+$('restartBtn').addEventListener('click',()=>{if(!confirm('Start your birthday adventure again from the beginning?'))return;state={stage:0};try{localStorage.removeItem(soloKey)}catch{}render()});
+$('createBtn').addEventListener('click',createRoom);$('joinBtn').addEventListener('click',joinRoom);$('enterBtn').addEventListener('click',()=>{hide('inviteArea');show('gameArea');render()});$('copyBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('inviteLink').value);message('Copied! Send the invitation privately to Mussu.')}catch{$('inviteLink').select();message('Select and copy the link manually.')}});
+const params=new URLSearchParams(location.search);if(params.has('room')&&params.has('invite')){hide('soloBtn');hide('multiplayerLink');show('joinArea');joinRoom()}else if(params.get('mode')==='multiplayer'){show('multiControls')}else{startSolo()}
+</script>
+<script>
+/* Purely decorative: no Firebase data, room state, or game handlers are changed. */
+(()=> {
+ const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const field=document.getElementById('starfield');
+ const count=reduce?35:110;
+ let seed=1729;
+ const rand=()=>((seed=(seed*1664525+1013904223)>>>0)/4294967296);
+ const fragment=document.createDocumentFragment();
+ for(let i=0;i<count;i++){
+   const s=document.createElement('i');s.className='star';
+   s.style.left=(rand()*100)+'%';s.style.top=(rand()*100)+'%';
+   s.style.setProperty('--size',(1+rand()*2.4)+'px');
+   s.style.setProperty('--opacity',(.3+rand()*.7).toFixed(2));
+   s.style.setProperty('--duration',(2+rand()*5)+'s');
+   s.style.setProperty('--delay',(-rand()*8)+'s');fragment.appendChild(s);
+ }
+ field.appendChild(fragment);
+ if(reduce)return;
+ document.addEventListener('click',e=>{
+   if(!e.target.closest('button'))return;
+   for(let i=0;i<7;i++){
+     const p=document.createElement('span');p.className='sparkle';p.textContent=i%2?'✦':'✧';
+     p.style.left=(e.clientX+(rand()-.5)*95)+'px';
+     p.style.top=(e.clientY+(rand()-.5)*50)+'px';
+     p.style.color=i%2?'#ffe5ac':'#ffb3e2';
+     document.body.appendChild(p);
+     p.addEventListener('animationend',()=>p.remove(),{once:true});
+   }
+ });
+ const target=document.getElementById('stageContent');
+ const observer=new MutationObserver(()=>{
+   target.style.animation='none';
+   void target.offsetWidth;
+   target.style.animation='';
+ });
+ observer.observe(target,{childList:true});
+})();
+</script>
+</body></html>
